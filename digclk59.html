@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<h1 align="center">Current Time:<span id="clock"></span> </h1>
+<script>
+    function getTime()
+    {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getSeconds();
+        document.getElementById('clock').innerHTML=h+":"+m+":"+s;
+    }
+    setInterval("getTime()",1000);
+</script>
+</html>
